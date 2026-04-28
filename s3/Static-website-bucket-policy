@@ -1,1 +1,52 @@
+⚠️ IMPORTANT NOTE (VERY IMPORTANT)
+
+👉 JSON used in AWS does NOT support comments
+
+So:
+
+✅ For GitHub (documentation purpose)
+
+✔ You can keep comments (like above)
+
+❌ For AWS S3 console
+
+👉 You must remove comments:
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadAccess", 
+      // This statement allows public read access to all objects in the bucket
+
+      "Effect": "Allow",
+      // Allow the action
+
+      "Principal": "*",
+      // '*' means anyone on the internet can access (public)
+
+      "Action": "s3:GetObject",
+      // Only allows reading/downloading files (safe for static websites)
+
+      "Resource": "arn:aws:s3:::nancymishrawebsite/*"
+      // IMPORTANT: Replace with your bucket name
+      // Format: arn:aws:s3:::<your-bucket-name>/*
+    }
+  ]
+}
+
+---------------------------------------------------------------------------------------------------
+🧾 ✅ FINAL POLICY (for AWS upload)
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadAccess",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::nancymishrawebsite/*"
+    }
+  ]
+}
 
