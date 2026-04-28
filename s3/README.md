@@ -160,5 +160,5 @@ https://dxxxxx.cloudfront.net
 
 ## 👨‍💻 Author
 
-Avanish 🚀
+Avinash Pandey 🚀
 
