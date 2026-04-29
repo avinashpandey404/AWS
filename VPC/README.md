@@ -13,8 +13,18 @@ This guide is:
 * ✅ Manual setup (no CLI / Terraform)
 * ✅ Real-world DevOps project
 
----
+🔗 VPC Peering Connection ID (pcx)
 
+During this project, a VPC Peering connection was created with the following ID:
+
+pcx-0c8ba712e4e84c503
+🧠 What is pcx?
+pcx stands for VPC Peering Connection
+It is a unique identifier assigned by AWS
+It represents the private connection between two VPCs
+
+👉 Think of it as a bridge ID connecting two networks
+---
 # 🎯 What You Will Learn
 
 * What is VPC, Subnet, CIDR
@@ -28,8 +38,11 @@ This guide is:
 
 ![Workflow](https://github.com/avinashpandey404/AWS/blob/main/VPC/AWS%20VPC%20Peering%20work%20flow.png?raw=true)
 # 🧠 Key Concepts
+🎯 Interview Answer (Top Level)
 
+👉 “What is pcx in AWS?”
 ## 🔹 What is VPC?
+pcx is the identifier of a VPC Peering connection, used in route tables to direct traffic between two peered VPCs.
 
 A **Virtual Private Cloud (VPC)** is your private network in AWS.
 
