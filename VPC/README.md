@@ -3,7 +3,9 @@
 ## 📌 Overview
 
 This project demonstrates how to **connect two AWS VPCs privately** using **VPC Peering** and verify communication using EC2 instances.
+## 🏗️ Architecture Diagram (View 1)
 
+![Architecture-1](https://github.com/avinashpandey404/AWS/blob/main/VPC/AWS%20VPC%20Peering%20Architecture-1.png?raw=true)
 This guide is:
 
 * ✅ Beginner-friendly
@@ -22,7 +24,9 @@ This guide is:
 * Security Groups & Routing
 
 ---
+## 🔄 Traffic Flow (Workflow)
 
+![Workflow](https://github.com/avinashpandey404/AWS/blob/main/VPC/AWS%20VPC%20Peering%20work%20flow.png?raw=true)
 # 🧠 Key Concepts
 
 ## 🔹 What is VPC?
@@ -61,15 +65,9 @@ ssh -i key.pem ubuntu@<ip>
 
 ---
 
-# 🗺️ Architecture Diagram
+## 🏗️ Architecture Diagram (View 2)
 
-```
-VPC-A (10.0.0.0/16)             VPC-B (10.1.0.0/16)
-     |                                 |
- Subnet-A (10.0.1.0/24)      Subnet-B (10.1.1.0/24)
-     |                                 |
-   EC2-A  <------ Peering ------>    EC2-B
-```
+![Architecture-2](https://github.com/avinashpandey404/AWS/blob/main/VPC/AWS%20VPC%20Peering%20Architecture-2.png?raw=true)
 
 ---
 
